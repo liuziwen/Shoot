@@ -1,0 +1,84 @@
+﻿有如下类声明： 
+class Base{
+protected： 
+int amount； 
+public： 
+Base(int n=0)：amount(n){}
+int getAmount()const{retum amount；}
+}； 
+class Derived：public Base{
+protected： 
+int value； 
+public： 
+Derived(int m，int n)：value(m)，Base(n){}
+int getData()const{return value+amount；}
+}： 
+已知x是一个Derived对象，则下列表达式中正确的是(  )。
+
+A．x．value+X．getAmount()
+
+B．x．getData()一x．getAmount()
+
+C．x．getData()一x．amount
+
+D．x．value+X．amount
+
+2
+
+解析：本题考查公有继承中派生类对象对基类的访问属性。在公有继承中，派生类对象只能访问基类的公有成员，而不能}方问基类的保护成员和私有成员。题中x是派生类的对象，只能访问基类中公有的Base()和getAmount()成员，而不能访问保护类型的amount成员，故选项C、D错误。而类对象对类成员的访问也存在类似的情况，即类对象只能访问类的公有成员，而value是Derived的保护成员，所以A选项也错误。故答案为B。
+
+有如下程序： 
+#inClude<iostream>
+using namespaCe std； ClaSS A{
+publiC： 
+A(int i){x=i；}
+void dispa（　　）{Cout<<x<<’，’；} private： 
+int x； }； 
+Class B：publiC A{ publiC： 
+B(int i)：A(i+10){x=i；}
+vold dispb（）{dispa（）；Cout<<x<<endl；} private： 
+int x； }； 
+int main（）} B b(2)； b．dispb（）； 
+return 0； }
+执行这个程序的输出结果是（　　）。
+
+A．10，2
+
+B．12,10
+
+C．12，2
+
+D．2，2
+
+3
+
+解析：本题考查派生类的构造函数和基类的构造函数。本题中类B继承类A，定义了?个类B的对象并初始化b(2)，此时会执行类B的构造函数，执行的结果是继承类A中的私有成员赋值了12，给类B自身的数据成员x赋值了2，执行b．dispb()后，输出类A的私有成员x，输出类B自身的数据成员，所以答案为C
+
+#include<iostroam>
+using namespace std； 
+class Base{
+protected： 
+Base(){cout<<’A’；}
+Base(char C）{cout<<c；}
+}； 
+class Derived：public Base{
+public： 
+Derived(char C）{tout<<C；}
+}； 
+int main(){
+Derived dl(’B’)； 
+retum 0； 
+}
+执行这个程序的输出结果是（　　）。
+
+A．B
+
+B．BA
+
+C．AB
+
+D．BB
+
+3
+
+解析：本题考查派生类的构造函数和析构函数．在定义一个派生类的对象时，先调用基类的构造函数，然后再执行派生类的构造函数；对象释放时，先执行派生类的析构函数，再执行基类的析构函数。本题中定义了一个派生类对象d1，首先执行基类的构造函数，输出A；然后执行派生类的构造函数，输出B。所以答案为c。

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setList">
+        <item>对战模式</item>
+        <item>问答题难度</item>
+        <item>AI玩家级别</item>
+        <item>背景音乐</item>
+        <item>音量</item>
+        <item>音效</item>
+    </string-array>
+
+
+</resources>

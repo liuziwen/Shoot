@@ -1,0 +1,66 @@
+﻿当使用fstream流类定义一个流对象并打开一个磁盘文件时，文件的隐含打开方式为( )。
+
+A．ios：：in
+
+B．ios：：0ut
+
+C．ios：：in I ios：：0ut
+
+D．以上都不对
+
+4
+
+解析：使用fstream类建立文件流必须定义打开方式，否则编译器无法判断该文件流是读还是写。
+
+有如下程序： 
+#include<iostream>
+using namespace std； 
+class MyClass{
+public： 
+MyClass(){cout<<’A’；}
+MyClass(char C．{cout<<C；}
+～MyClass(){cout<<’B’；}
+}； 
+int main(){
+MyClass pl，p2； 
+p2=new MyClass(’X’)； 
+delete p2； 
+return 0； 
+}
+执行这个程序的输出结果是（　　）。
+
+A．ABX
+
+B．ABXB
+
+C．AXB
+
+D．AXBB
+
+4
+
+解析：构造函数和析构函数的调用顺序为先构造的后析构，后构造的先析构。所以本题答案为D。
+
+有如下程序： 
+﹟nclude<iostream>
+using namespace std； 
+int main()
+{
+int*P； 
+*P=9： 
+cout<<”The value at p：”<< *p； 
+return 0； 
+}
+编译运行程序将出现的情况是( )。
+
+A．编译时出现语法错误，不能生成可执行文件
+
+B．运行时一定输出：l'lle value at P：9
+
+C．运行时一定输出：llle value at P：*9
+
+D．运行时有可能出错
+
+4
+
+解析：先定义指针变量，然后给指针变量赋初值有三种情况：①用取地址运算符“＆”将变量地址赋给指针变量，如P=&a；②将一个指针变量中的地址赋给另一个指针变量，如P=p1；③给指针变量赋空值0，如q=0，表示该指针变量不指向任何变量。而不能用一个常量给指针变量赋初值，所以本题选D。

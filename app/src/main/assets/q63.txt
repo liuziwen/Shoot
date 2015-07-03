@@ -1,0 +1,84 @@
+﻿有如下程序： 
+#include<iostream>
+using namespace std； 
+class Base
+{
+private： 
+void funl()const{tout<<”funl”；}
+protected： 
+void fun2()const{tout<<”fun2”；}
+public： 
+void fun3()const{cout<<”fhll3”；}
+}； 
+class Derived：protected Base
+{
+public： 
+void fhn4()const{cout<<”filn4”；}
+}； 
+int main()
+{
+Derived obj； 
+obj．funl()；//① 
+obj．fun2()；//② 
+obj．furd()；//③ 
+obj．fun4()；//④ 
+return U： 
+}
+其中有语法错误的语句是（　　）。
+
+A．①②③④
+
+B．①②③
+
+C．②③④
+
+D．①④
+
+2
+
+解析：本题考查保护继承中派生类对基类的访问属性，受保护继承中，基类的公用成员和保护成员在派生类中成了保护成员，其私有成员仍为基类私有，保护基类的所有成员在派生类中都被保护起来，在类外不能访问，所以①②③错误。
+
+有如下程序： 
+#include<iostream>
+using namespace std； 
+class Instrument{
+public： 
+virtual void Display()=0； 
+}； 
+class Pian0：public Instrument}
+public： 
+void Display(){/*函数体略*" >
+}； 
+intmain(){
+Instrument S； 
+Instrument*P=0： 
+//…； 
+return 0； 
+}
+下列叙述中正确的是（　　）。
+
+A．语句“Insturment*P=0；”编译时出错
+
+B．语句“Instnunent s；”编译时出错
+
+C．类Pian0中的Display函数不是虚函数
+
+D．类Instrument是一个虚基类
+
+2
+
+解析：本题考查纯虚函数和抽象类，纯虚函数是在声明虚函数时被“初始化”为0的函数，包含纯虚函数的类为抽象类，抽象类不能被实例化，所以语句“Instrmnent s；”在编译时出错。
+
+下列情况中，不会调用拷贝构造函数的是（　　）。
+
+A．用一个对象去初始化同一类的另一个新对象时
+
+B．将类的一个对象赋值给该类的另一个对象时
+
+C．函数的形参是类的对象，调用函数进行形参和实参结合时
+
+D．函数的返回值是类的对象，函数执行返回调用时
+
+2
+
+解析：本题考查复制构造函数，在以下3种情况下使用：①程序中需要新建立一个对象，并用另一个对象对它初始化；②函数的参数为类的对象；③函数的返回值是类的对象。其中B选项是由赋值运算符重载实现的。

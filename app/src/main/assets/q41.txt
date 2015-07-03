@@ -1,0 +1,41 @@
+﻿下列有关内联函数的叙述中，正确的是( )。
+
+A．内联函数在调用时发生控制转移
+
+B．内联函数必须通过关键字inline来定义
+
+C．内联函数是通过编译器来实现的
+
+D．内联函数函数体的最后一条语句必须是return语句
+
+3
+
+解析：一般函数进行调用时，要将程序执行权转到被调用函数中，然后再返回到调用它的函数中；而内联函数在调用时，是将调用表达式用内联函数体来替换，所以在调用时不发生控制转移。在类内部实现的函数都是内联函数，可以不用inline定义；只有函数外部定义的内联函数才必须加关键字inline。编译系统并非对内联函数必须使用内联，而且根据具体情况决定。内联函数不是必须要有返回值的。
+
+将前缀运算符“--”重载为非成员函数，下列原型中能正确用于类中说明的是（ ）
+
+A．DeCr&operator--(int)；
+
+B．DeCr operator--(DeCr&，int)；
+
+C．friend DeCr&operator--(DeCr&)；
+
+D．friend DeCr operator--(DeCr&，int)；
+
+3
+
+解析： 把“--”运算符重载为非成员(友元)函数格式：friend<返回类型>operator--()是前缀的格式；friend<返回类型>operator--(int)是后缀的格式。当然也可以有参数如题中C选项所示
+
+下列函数模板的定义中，合法的是（　　）。
+
+A．template<typename T>T abs(T X){return x<07-x：X；}
+
+B．template Class<T>T abs(T x){return x<07-X：x；}
+
+C．template T<Class T>abs(T X){return x<07-x：X；}
+
+D．template T abs(T x){return X<0?-X：x；}
+
+1
+
+解析：本题考查模板函数的基本概念．根据模板函数的定义，所以答案为A。

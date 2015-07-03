@@ -1,0 +1,248 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center"
+
+    tools:context="com.example.lzw.shoot.Myset.SetDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/set1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:textColor="@color/textcolor"
+            android:text="对战模式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:background="@drawable/shape1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单机模式"/>
+                <RadioButton
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联机模式"/>
+                </RadioGroup>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/set2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:textColor="@color/textcolor"
+            android:text="问答题难度"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/difficultySet"
+                android:background="@drawable/shape1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/easy"
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="初级"/>
+                <RadioButton
+                    android:id="@+id/middle"
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中级"/>
+                <RadioButton
+                    android:id="@+id/hard"
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高级"/>
+            </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/set3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/textcolor"
+            android:text="AI玩家级别"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:background="@drawable/shape1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新手"/>
+                <RadioButton
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="掌握"/>
+                <RadioButton
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高手"/>
+            </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/set4"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:textColor="@color/textcolor"
+            android:text="背景音乐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:background="@drawable/shape1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Song A"/>
+                <RadioButton
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Song B"/>
+                <RadioButton
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Song C"/>
+            </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:id="@+id/set5"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:textColor="@color/textcolor"
+            android:text="音量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@drawable/shape1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+            <Switch
+                android:textColor="@color/textcolor"
+                android:text="音量开关"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="开"
+                android:textOff="关"/>
+            <SeekBar
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/set6"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+
+            android:textColor="@color/textcolor"
+            android:text="音效"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@drawable/shape1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+            <Switch
+                android:textColor="@color/textcolor"
+                android:text="音效开关"
+                android:id="@+id/yinxiao"
+                android:textOn="开"
+                android:textOff="关"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <SeekBar
+
+                android:id="@+id/setyinxiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

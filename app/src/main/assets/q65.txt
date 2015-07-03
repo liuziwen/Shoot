@@ -1,0 +1,54 @@
+﻿如果表达式x * y+z中，“*”是作为友元函数重载的，“+”是作为成员函数重载的，则该表达式还可为 ( )。
+
+A．operator+(operator*(X，Y)，z)
+
+B．x．operator+(operator * (x，y)，Z)
+
+C．Y．operator * (operator+(x，Y)，z)
+
+D．x．operator+(operator{(X，Y))
+
+1
+
+解析：C++中用成员函数重载x * y为：x．operator}(y)，用友元函数重载x*Y为：(operator*(x，Y)，用成员函数重载x+Y为：x．operator+(Y)，用友元函数重载x+Y为：operator+(x，Y）。
+
+有如下程序： 
+#nclude<iostream>
+using namespace std； 
+int main()
+{
+void function(double val)； 
+double val； 
+function(val)； 
+cout<<val； 
+return 0； 
+}
+void function(double val)
+} val=3；}
+编译运行这个程序将出现的情况是（　　）。
+
+A．编译出错，无法运行
+
+B．输出：3
+
+C．输出：3．0
+
+D．输出一个不确定的数
+
+4
+
+解析：本题考查函数调用及传值方式传递参数，执行函数function时，并没有将3的值传回来，而val又没有初始化，所以会输出一个不确定的值，D选项正确。
+
+this指针是C++语言实现( )的一种机制。
+
+A．抽象
+
+B．封装
+
+C．继承
+
+D．重载
+
+2
+
+解析：this指针是c++语言实现封装的一种机制，它将对象和该对象调用的成员函数连接在一起．在外部看来，每-个对象都拥有自己的函数成员。
